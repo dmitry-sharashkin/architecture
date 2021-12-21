@@ -1,0 +1,450 @@
+@import "vars";
+
+
+@media (max-width:1200px){
+	.header{
+		width: 100%;
+	}
+	.header-nav__item{
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	.about{
+		padding: 150px 40px 216px;
+	}
+	.news__wrap{
+		    padding: 300px 40px 400px;
+	}
+	.contact{
+		padding:0 40px 165px;
+	}
+	.references__title{
+		left: -275px;
+	}
+	.references__title h2{
+		font-size: 135px;
+	}
+	.footer .footer_left{
+		margin-left: 80px;
+	}
+	.footer .footer_right{
+		margin-right: 90px;
+	}
+} 
+@media (max-width:992px){
+	.header-nav__item{
+		margin-right: 35px;
+	}
+	.sidebar-nav{
+		display: none;
+	}
+	.slide{
+		width: 100%;
+		max-height: 750px;
+	}
+	.slider-control{
+		bottom: 5%;
+	}
+	.slider_prev{
+		left: 13%;
+	}
+	.slider_next{
+		left: calc(13% + 80px);
+	}
+	.slide__title{
+		left: 15%;
+		h2{
+			font-size: 32px;
+		}
+	}
+	.header{
+		padding:30px;
+	}
+	.sidebar-social{
+		left: 40px;
+		bottom:5%;
+		a{
+			margin-bottom: 25px;
+		}
+	}
+	.about{
+		padding:130px 30px 170px;
+	}
+	.about__heading h2{
+		font-size: 20px;
+	}
+	.references{
+		margin-bottom: 90px;
+	}
+	.references-slide{
+		max-height: 550px;
+	}
+	.references__title h2{
+		font-size: 110px;
+	}
+	.references__title{
+		left: -240px;
+	}
+	.news__wrap{
+		padding:30px 30px 280px;
+		display: block;
+	}
+	.news{
+		width: 50%;
+		margin: 80px auto;
+	}
+	.blog{
+		width: 50%;
+		margin: 80px auto;
+		h3{
+			margin-bottom: 55px;
+		}
+	}
+	.news-photo__wrap{
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	.careers{
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-bottom: 220px;
+	}
+	.careers-heading{
+		width: 50%;
+		margin: 0 0 50px;
+		order: -1;
+	}
+	.careers-heading .careers-heading__txt{
+		font-size: 35px;
+		margin: 25px 0 32px;
+	}
+	.careers__img{
+		width: 90%;
+	}
+	.contact{
+		padding:0 30px 80px;
+	}
+	.footer{
+		height: 80px;
+	}
+
+}
+@media (max-width: 767px){
+	.header{
+		padding: 10px;
+	}
+
+	.burger-menu{
+		display: flex;
+	}
+	.header-nav{
+			display: none;
+			position: absolute;
+			top: 50px;
+			right: 14px;
+			flex-direction: column;
+			border:2px solid #2e3b40;
+			padding:15px;
+			z-index: 10;
+			background-color:fade(#fff, 90%);
+			text-align: center;
+
+
+
+	}
+	.header-nav__item{
+		margin-right: 0;
+		margin-bottom: 10px;
+		color: #2e3b40;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.header-nav__item:hover:after{
+		background-color: #2e3b40;
+		bottom:-5px;
+	}
+	.header-nav__active{
+		display: flex;
+	}
+	.header__logo img{
+		width: 66px;
+	}
+	.slide{
+		max-height: 480px;
+	}
+	.slider-control{
+		width: 40px;
+		height: 40px;
+	}
+	.slider_prev{
+		left: 7%;
+	}
+	.slider_next{
+		left: calc(7% + 50px);
+	}
+	.slide__title{
+		left: 6%;
+	}
+	.slide__title h2{
+		font-size: 22px;
+	}
+	.slide__title::after{
+			height: 30px;
+	}
+	.sidebar-social{
+		position: static;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.sidebar-social a{
+		margin: 16px;
+	}
+	.about{
+		display: block;
+		padding:65px 30px 85px;
+	}
+	.about__heading{
+		width: 100%;
+
+	}
+	.about-text{
+		width: 100%;
+	}
+
+	.references{
+		margin-bottom: 40px;
+	}
+	.references-slide{
+		flex-direction: column;
+		max-height: 800px;
+	}
+
+	.ref-slide_left{
+		width: 100%;
+	}
+	.ref-slide_right{
+		width: 100%;
+		max-height: 380px;
+	}
+	.references__title{
+		transform: none;
+		position: static;
+		h2{
+			font-size: 70px;
+			text-align: center;
+		}
+	}
+	.ref-slide__control{
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+	.ref-slide__next{
+		margin: 25px;
+		padding-top:7px;
+	}
+	.ref-slide__count{
+		
+		line-height: 1;
+	}
+	.ref-slide_right .ref-slide__item{
+		width: 100%;
+		height: auto;
+	}
+	.ref-slide_left .ref-slide__item{
+		width: 100%;
+		height: auto;
+	}
+
+	.blog, .news{
+		width: 80%;
+		margin-top: 30px;
+	}
+	.news-photo__wrap{
+		width: 80%;
+	}
+	.careers{
+		padding-bottom:140px;
+	}
+	.careers-heading{
+		width: 80%;
+	}
+	.careers__img{
+		width: 99%;
+	}
+
+
+	.contact{
+		padding: 0 30px;
+	}
+	.contact__logo img{
+		width: 77px;
+	}
+
+	.contact-menu a{
+		margin-right: 30px;
+	}
+	.contact__wrap{
+		display: block;
+		max-height: none;
+		margin-bottom: 38px;
+	}
+	.contact-menu{
+		margin: 38px 0;
+	}
+	.contact-menu ul{
+		max-height: 100px;
+	}
+	.footer .footer_left{
+		margin-left: 30px;
+	}
+	.footer .footer_right{
+		margin-right: 35px;
+	}
+	.footer{
+		height: 60px;
+	}
+	.footer p{
+		font-size: 12px;
+	}
+
+
+}
+@media (max-width: 479px){
+	.ellipse_top{
+		background-image:none;
+	}
+	.slide{
+		max-height: 300px;
+	}
+	.slide__title{
+		left: 3%;
+	}
+	.slide__title h2{
+		font-size: 17px;
+	}
+	.slider-control{
+		width: 30px;
+		height: 30px;
+		img{
+			width: 8px;	
+		}
+	}
+	.slider_next{
+		left: calc(7% + 38px);
+	}
+	.references__title h2{
+		font-size: 50px;
+	}
+	.about{
+		padding:30px 10px 40px;
+	}
+	.about__heading h2{
+		font-size: 16px;
+	}
+	.about-text p{
+		margin: 25px 0 30px;
+		font-size: 12px;
+	}
+	.about-text span{
+		font-size: 12px;
+	}
+	.ref-slide__count{
+		font-size: 26px;
+
+	}
+	.ref-slide__next{
+		padding-top:5px;
+		margin: 15px 25px;
+		img{
+			height: 18px;
+		}
+	}
+	.ref-slide_right{
+		max-height: 200px;
+	}
+	.news__wrap{
+		padding:30px 10px 200px;
+	}
+	.blog, .news{
+		width: 100%;
+		margin: 60px 0;
+
+	}
+	.news-photo__wrap{
+		width: 100%;
+	}
+	.news h3{
+		font-size: 18px;
+		margin: 34px 0 16px;
+	}
+	.news time{
+		margin-bottom: 24px;
+	}
+	.news p{
+		font-size: 12px;
+		height: 112px;
+		margin-bottom: 30px;
+	}
+	.news-control button{
+		font-size: 12px;
+	}
+	.news-read-more:after{
+		margin: 0 20px;
+	}
+	.blog__article{
+		margin-bottom: 30px;
+	}
+	.blog__article p{
+		font-size: 20px;
+	}
+	.blog h3{
+		margin-bottom: 38px;
+	}
+	.blog a{
+		font-size: 12px;
+	}
+	.careers{
+		padding-bottom:100px;
+	}
+	.careers-heading{
+		width: 100%;
+	}
+	.careers-heading .careers-heading__txt{
+		font-size: 30px;
+		margin: 20px 0 26px;
+	}
+	.careers-heading .careers-heading-invite{
+		font-size: 12px;
+	}
+	.careers-heading h3{
+		font-size: 11px;
+	}
+	.contact{
+		padding:10px;
+	}
+	.contact__logo img{
+		width: 66px;
+	}
+	.contact-address div, .contact-address p{
+		margin-bottom: 14px;
+	}
+	.contact-map__link span{
+		margin-left: 5px;
+	}
+
+	.footer .footer_left{
+		margin-left: 5px;
+
+	}
+	.footer .footer_right{
+		margin-right: 10px;
+	}
+	.footer{
+		height: 55px;
+	}
+}

@@ -1,0 +1,66 @@
+@import "vars";
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family:'Arsenal', sans-serif;
+	color: @turquoise;
+	box-sizing: border-box;
+
+}
+
+.main__wrapper{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.wrapper{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: inherit;
+}
+button{
+	padding:0;
+	margin: 0;
+	border:none;
+	background-color:#fff;
+	color: @turquoise;
+	&:hover{
+		cursor: pointer;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+.ellipse_top{
+	background-image: url(../../img/Slice_1.png) ;
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100% auto;
+
+}
+.ellipse_bottom{
+	background: url(../../img/Slice_2.png);
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:top;
+	background-size: 100% auto;
+}
+.ellipse-fix{
+	position: relative;
+	top: -100px; 
+}
+ul{
+	padding:0;
+	margin: 0;
+}
+li{
+	padding:0;
+	margin: 0;
+	list-style: none;
+}

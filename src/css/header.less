@@ -1,0 +1,41 @@
+@import "vars";
+.header{
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position:absolute;
+	width: 95%;
+	box-sizing: border-box;
+	z-index: 2;
+}
+.header-nav__item{
+	text-transform: uppercase;
+	margin-right: 70px;
+	font-size: 14px;
+	font-weight: 700;
+	position:relative;
+	&:hover:after{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		height: 2px;
+		background-color:@turquoise;
+		width: 100%;
+		bottom: -10px;
+		left: 0;
+	}
+}
+.burger-menu{
+	display: none;
+	flex-direction: column;
+	span{
+		content: '';
+		width: 23px;
+		height: 3px;
+		background-color:@turquoise;
+		display: inline-block;
+		margin: 3px;
+		border-radius:25%;
+	}
+}
